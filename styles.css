@@ -38,14 +38,19 @@ body {
   padding: 0.75rem 0;
 }
 
-/* Logo image */
+/* Logo image
+   Assumes the source file is about 500x500px (Canva free limit).
+   We display it much smaller so it stays crisp, never stretched. */
 .logo {
   display: flex;
   align-items: center;
 }
 
 .logo-img {
-  height: 64px;       /* bigger logo on desktop */
+  height: 96px;       /* visible size on desktop/tablet */
+  max-height: 96px;
+  width: auto;        /* keep aspect ratio */
+  max-width: 500px;   /* never bigger than source */
   display: block;
 }
 
@@ -500,11 +505,6 @@ textarea {
     flex-wrap: wrap;
     gap: 0.75rem;
   }
-
-  /* slightly smaller logo on tablets/phones */
-  .logo-img {
-    height: 44px;
-  }
 }
 
 @media (max-width: 500px) {
@@ -519,5 +519,11 @@ textarea {
   .btn {
     width: 100%;
     justify-content: center;
+  }
+
+  /* slightly smaller logo on very small phones, still crisp */
+  .logo-img {
+    height: 80px;
+    max-height: 80px;
   }
 }
