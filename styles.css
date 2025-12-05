@@ -45,7 +45,7 @@ body {
 }
 
 .logo-img {
-  height: 40px;
+  height: 64px;       /* bigger logo on desktop */
   display: block;
 }
 
@@ -441,6 +441,11 @@ textarea {
     justify-content: flex-start;
     flex-wrap: wrap;
     gap: 0.75rem;
+  }
+
+  /* slightly smaller logo on tablets/phones */
+  .logo-img {
+    height: 44px;
   }
 }
 
