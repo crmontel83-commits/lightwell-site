@@ -649,4 +649,15 @@ textarea {
   color: #e5e7eb;
   line-height: 1.6;
 }
+/* Highlight FAQ bottom link */
+#faq .section-note a {
+  color: #fbbf24;        /* same warm yellow as your buttons */
+  font-weight: 600;      /* bolder, easier to read */
+  text-decoration: none; /* no default underline */
+}
+
+#faq .section-note a:hover,
+#faq .section-note a:focus {
+  text-decoration: underline; /* show underline on hover/focus */
+}
 
