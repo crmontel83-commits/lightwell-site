@@ -81,6 +81,9 @@ body {
 .hero {
   background: radial-gradient(circle at top, #202332 0, #0b0c10 60%);
   padding: 4.5rem 0 3.5rem;
+  min-height: calc(100vh - 70px); /* fill almost full screen minus header */
+  display: flex;
+  align-items: center;            /* vertically center hero content */
 }
 
 .hero-content {
@@ -482,6 +485,10 @@ textarea {
 
 /* Responsive tweaks */
 @media (max-width: 800px) {
+  .hero {
+    padding-top: 4.5rem; /* a bit more breathing room with sticky header */
+  }
+
   .hero-content {
     grid-template-columns: 1fr;
   }
