@@ -591,4 +591,62 @@ textarea {
 #contact .social-button:focus {
   text-decoration: underline;
 }
+/* FAQ dropdown styles */
+.faq-list {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.faq-item {
+  border-radius: 0.75rem;
+  border: 1px solid rgba(148, 163, 184, 0.6);
+  background: rgba(15, 23, 42, 0.7);
+  padding: 0.75rem 1rem;
+}
+
+.faq-question {
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  padding: 0.25rem 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #e5e7eb;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.faq-question::after {
+  content: "▾"; /* small arrow */
+  font-size: 0.9rem;
+  margin-left: 0.5rem;
+  transition: transform 0.2s ease;
+}
+
+.faq-item.open .faq-question::after {
+  transform: rotate(180deg);
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.25s ease, opacity 0.2s ease;
+  opacity: 0;
+}
+
+.faq-item.open .faq-answer {
+  max-height: 300px; /* plenty of space for the text */
+  opacity: 1;
+  margin-top: 0.5rem;
+}
+
+.faq-answer p {
+  margin: 0;
+  color: #e5e7eb;
+  line-height: 1.6;
+}
 
