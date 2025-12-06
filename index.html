@@ -2,13 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Lightwell Web Designs</title>
+  <title>Lightwell Web Designs – Home</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Lightwell Web Designs - clean, custom websites for authors and storytellers.">
+  <meta name="description" content="Lightwell Web Designs builds clean, author-friendly websites and story worlds.">
   <link rel="stylesheet" href="styles.css">
-  <!-- Optional: favicon later
   <link rel="icon" type="image/png" href="favicon.png">
-  -->
 </head>
 <body>
   <header class="site-header">
@@ -32,34 +30,27 @@
     </div>
   </header>
 
-  <!-- HERO / HOME — stand-alone landing -->
-  <section id="home" class="hero">
-    <div class="container hero-content">
-      <div class="hero-text">
-        <h1>Websites that make your stories shine.</h1>
-        <p>
-          Lightwell Web Designs builds clean, custom websites for authors and storytellers
-          who want a professional online home without a publishing-house tech team.
-        </p>
-        <div class="hero-actions">
-          <a href="site.html#request" class="btn primary">Request a project</a>
-          <a href="site.html#services" class="btn ghost">View packages</a>
+  <!-- HOME / HERO ONLY -->
+  <main>
+    <section id="home" class="hero section">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <h1>Websites that shine a light on your stories.</h1>
+          <p class="hero-subtitle">
+            Lightwell Web Designs builds clean, focused sites for authors and storytellers
+            who want a professional home for their books, worlds, and readers.
+          </p>
+          <div class="hero-actions">
+            <a href="site.html#services" class="btn primary">View services &amp; pricing</a>
+            <a href="site.html#request" class="btn secondary">Request a project</a>
+          </div>
+          <p class="small-note">
+            Based in Zimbabwe • Working with indie authors worldwide.
+          </p>
         </div>
-        <p class="hero-subtext">
-          Based in Zimbabwe, working with clients worldwide.
-        </p>
       </div>
-      <div class="hero-card">
-        <h2>Perfect for:</h2>
-        <ul>
-          <li>Debut authors on a budget</li>
-          <li>Indie series with multiple worlds</li>
-          <li>Blog-style story platforms</li>
-          <li>Simple launch and pre-order pages</li>
-        </ul>
-      </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
   <footer class="site-footer">
     <div class="container footer-inner">
@@ -67,7 +58,6 @@
       <p class="small-note">Based in Zimbabwe • Serving authors and creatives worldwide.</p>
     </div>
     <script>
-      // Year + mobile menu toggle
       document.getElementById('year').textContent = new Date().getFullYear();
 
       const navToggle = document.querySelector('.nav-toggle');
